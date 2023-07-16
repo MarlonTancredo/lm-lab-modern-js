@@ -1,5 +1,5 @@
 // Instructions can be found in default_parameters.md
 
-export const sayHello = (person) => {
-  return `Hello, ${person === undefined ? "you!" : person + "!"}`;
+export const sayHello = (person = "Laura") => {
+  return `Hello, ${person + "!"}`;
 };
