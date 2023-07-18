@@ -1,10 +1,9 @@
 // Instructions can be found in rest_parameters.md
 
-function add(a, b) {
-  // Add a loop here
-  return a + b;
+export function add(...numbers) {
+  let result = 0;
+  numbers.forEach((number) => {
+    result += number;
+  });
+  return result;
 }
-
-add(1, 2, 3, 4, 5);
-
-module.exports = add;
